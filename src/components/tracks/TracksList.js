@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 
 
 const TracksList = ({ match }) => {
-  const tracks = useTracks(match.params.albumId);
-  console.log(tracks)
+  const { tracks, loading } = useTracks(match.params.albumId);
+  if(loading) return <p>Loading...</p>;
   const listOfTracks = tracks.map(track => {
-    console.log(match);
     return (
       <li key={track.id}>
         <Link
@@ -25,6 +24,6 @@ const TracksList = ({ match }) => {
     </>
   );
 };
-TracksList.
+
 
 export default TracksList;

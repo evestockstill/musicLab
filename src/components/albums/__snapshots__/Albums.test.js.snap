@@ -2,6 +2,6 @@
 
 exports[`Albums component matches a snapshot 1`] = `
 <p>
-  This artist has no albums.
+  Loading...
 </p>
 `;
