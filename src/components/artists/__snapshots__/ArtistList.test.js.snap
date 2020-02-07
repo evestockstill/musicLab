@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArtistList component matches a snapshot 1`] = `
+<ul>
+  <Link
+    key="1"
+    to="/albums/1"
+  >
+    <li>
+      test name
+    </li>
+  </Link>
+  <Link
+    key="2"
+    to="/albums/2"
+  >
+    <li>
+      test name2
+    </li>
+  </Link>
+</ul>
+`;
