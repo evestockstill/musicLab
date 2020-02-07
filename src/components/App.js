@@ -10,9 +10,9 @@ export default function App() {
     <>
       <Router >
         <Switch>
-          <Route path='/albums/:artistName/:id/:albumId/:songId' component={Lyrics} />
-          <Route path='/albums/:artistName/:id/:albumId' component={TracksList} />
-          <Route path='/albums/:artistName/:id' component={Albums} />
+          <Route path='/lyrics/:artistName/:albumId/:songId' component={Lyrics} />
+          <Route path='/tracks/:artistName/:id/:albumId' component={TracksList} />
+          <Route path='/artist/:artistName/:id' component={Albums} />
           <Route exact path='/' component={Header} />
         </Switch>
       </Router>

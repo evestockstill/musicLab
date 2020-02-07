@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 
 const Albums = ({ match }) => {
   const { albums, count } = useAlbums(match.params.id);
-  console.log(match);
+  
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
       <Link
         key={album.id}
-        to={`/albums/${match.params.artistName}/${match.params.id}/${album.id}`}
+        to={`/tracks/${match.params.artistName}/${album.title}/${album.id}`}
       >
         <li>{album.title}</li>
       </Link>
