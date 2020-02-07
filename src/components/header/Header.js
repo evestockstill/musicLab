@@ -5,13 +5,13 @@ import ArtistList from '../artists/ArtistList';
 import { useArtists } from '../../hooks/artists';
 
 const Header = () => {
-  const { artists, count, handleQueryChange, handleSubmit } = useArtists();
+  const { artists, loading, count, handleQueryChange, handleSubmit } = useArtists();
 
   return (
     <>
       <h1 className={styles.Header}>Artist Search</h1>
       <SearchBar onSubmit={handleSubmit} onQueryChange={handleQueryChange} />
-      <ArtistList artists={artists}/>
+      <ArtistList artists={artists} loading={loading} />
     </>
   );
 };

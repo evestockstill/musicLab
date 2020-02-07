@@ -13,6 +13,7 @@ exports[`Header component matches a snapshot 1`] = `
   />
   <ArtistList
     artists={Array []}
+    loading={true}
   />
 </Fragment>
 `;

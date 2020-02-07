@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 import record from '../../assets/record.jpg';
 
 const Albums = ({ match }) => {
-  const { albums, count } = useAlbums(match.params.id);
+  const { albums, count, loading } = useAlbums(match.params.id);
+  if(loading) return <p>Loading...</p>;
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
