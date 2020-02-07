@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const ArtistList = ({ artists }) => {
   const artistList = artists.map(artist => {
     return (
-    //   <Link to={`/albums/${artist.id}`}>
-      <li key={artist.id}>{artist.name}</li>
-    //   </Link>
+      <Link key={artist.id} to={`/albums/${artist.id}`}>
+        <li>{artist.name}</li>
+      </Link>
     );
   });
   return (

@@ -6,7 +6,10 @@ export default function App() {
   return (
     <>
       <Router >
-        <Header />
+        <Switch>
+          <Route path='/albums/:id' component={Albums} />
+          <Route path='/' component={Header} />
+        </Switch>
       </Router>
     </>
   );
