@@ -7,8 +7,7 @@ export const getArtists = query => {
       }
     }
   ).then(res => {
-    console.log('api res', res);
-    if (res.ok) return res.json();
+    if(res.ok) return res.json();
     throw `Response: ${res.status}`;
   });
 };

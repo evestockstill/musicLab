@@ -1,11 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useAlbums } from '../../hooks/albums';
+import { Link } from 'react-router-dom';
 
 const Albums = ({ match }) => {
+  const { albums, count } = useAlbums(match.params.id);
+  if(!count) return <p>This artist has no albums.</p>;
+  const albumsList = albums.map(album => {
+    return (
+      <Link key={album.id} to={`/albums/${match.params.id}/${album.id}`}>
+        <li>{album.title}</li>
+      </Link>
+    );
+  });
+
   return ( 
-    <>
-      <h1>{match.params.id} </h1>
-    </>
+
+    <ul>{albumsList} </ul>
   );
 };
 
