@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TracksList component matches a snapshot 1`] = `
-<h1>
-  Tracks
-</h1>
+<Fragment>
+  <h1>
+    Tracks
+  </h1>
+  <ul />
+</Fragment>
 `;
