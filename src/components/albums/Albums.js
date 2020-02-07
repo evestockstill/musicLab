@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Albums = ({ match }) => {
   const { albums, count } = useAlbums(match.params.id);
+  console.log(count);
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
@@ -14,7 +15,7 @@ const Albums = ({ match }) => {
     );
   });
 
-  return ( 
+  return (
 
     <ul>{albumsList} </ul>
   );
