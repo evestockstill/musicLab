@@ -4,7 +4,7 @@ const TracksList = ({ match }) => {
 
   const tracks = useTracks(match.params.albumId);
   const listOfTracks = tracks.map(track => {
-    console.log(track);
+    console.log(match);
     return (
       <li key={track.id}>{track.title}</li>
     );

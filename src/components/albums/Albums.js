@@ -5,11 +5,14 @@ import { Link } from 'react-router-dom';
 
 const Albums = ({ match }) => {
   const { albums, count } = useAlbums(match.params.id);
-  console.log(count);
+  console.log(match);
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
-      <Link key={album.id} to={`/albums/${match.params.id}/${album.id}`}>
+      <Link
+        key={album.id}
+        to={`/albums/${match.params.artistName}/${match.params.id}/${album.id}`}
+      >
         <li>{album.title}</li>
       </Link>
     );
@@ -24,7 +27,8 @@ const Albums = ({ match }) => {
 Albums.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      id: PropTypes.string.isRequired
+      id: PropTypes.string.isRequired,
+      artistName: PropTypes.string.isRequired
     }).isRequired
   }).isRequired
 };

@@ -7,7 +7,7 @@ export const useAlbums = (id) => {
 
   useEffect(() => {
     getAlbums(id).then(resObject => {
-      console.log(resObject['release-count']);
+      console.log(id, 'get album!!!!!!')
       setCount(resObject['release-count']);
       setAlbums(resObject.releases);
     });
