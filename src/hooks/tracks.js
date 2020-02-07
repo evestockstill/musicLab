@@ -9,6 +9,6 @@ export const useTracks = (id) => {
       .then(resObj => {
         setTracks(resObj.recordings);
       });
-  });
+  }, []);
   return tracks;
 };
