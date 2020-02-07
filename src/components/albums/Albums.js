@@ -10,7 +10,7 @@ const Albums = ({ match }) => {
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
-      <Link key={album.id} to={`/albums/${match.params.id}/${album.id}`}>
+      <Link key={album.id} to={`/tracks/${match.params.artistName}/${album.title}/${album.id}`}>
         <li>
           <p>{album.title}</p>
           <img src={album['cover-art-archive']['front'] ? `http://coverartarchive.org/release/${album.id}/front` : record}/>
@@ -28,7 +28,8 @@ const Albums = ({ match }) => {
 Albums.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      id: PropTypes.string.isRequired
+      id: PropTypes.string.isRequired,
+      artistName: PropTypes.string.isRequired
     }).isRequired
   }).isRequired
 };
