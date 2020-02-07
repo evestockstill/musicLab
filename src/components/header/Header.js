@@ -5,7 +5,7 @@ import ArtistList from '../artists/ArtistList';
 import { useArtists } from '../../hooks/artists';
 
 const Header = () => {
-    const { artists, count, handleQueryChange, handleSubmit } = useArtists();
+  const { artists, count, handleQueryChange, handleSubmit } = useArtists();
 
   return (
     <>

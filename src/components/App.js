@@ -9,7 +9,7 @@ export default function App() {
     <>
       <Router >
         <Switch>
-          <Route path='/albums/:id/:albumId' component = {TracksList} />
+          <Route path='/albums/:id/:albumId' component={TracksList} />
           <Route path='/albums/:id' component={Albums} />
           <Route exact path='/' component={Header} />
         </Switch>
