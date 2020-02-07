@@ -2,9 +2,9 @@ import React from 'react';
 import { useTracks } from '../../hooks/tracks';
 const TracksList = ({ match }) => {
 
-  const tracks = useTracks(match.params.albumId);
+  const { tracks, loading } = useTracks(match.params.albumId);
+  if(loading) return <p>Loading...</p>;
   const listOfTracks = tracks.map(track => {
-    console.log(track);
     return (
       <li key={track.id}>{track.title}</li>
     );
