@@ -12,12 +12,12 @@ export const useArtists = () => {
   const handleSubmit = () => {
     event.preventDefault();
     setSearchTerm(query);
-    const artistsNameId = artists.map(artist => ({
-      id: artist.id,
-      name: artist.name
-    }));
-    console.log(artistsNameId);
-    return artistsNameId;
+    // const artistsNameId = artists.map(artist => ({
+    //   id: artist.id,
+    //   name: artist.name
+    // }));
+    // console.log(artistsNameId);
+    return artists;
   };
 
   useEffect(() => {
