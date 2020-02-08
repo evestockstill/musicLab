@@ -1,0 +1,31 @@
+@import '../App.css';
+
+.nav {
+    background: $black;
+    padding: 0.8rem 1.2rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+    img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 100%;
+    }
+    .nav_links {
+        align-self: center;
+        list-style-type: none;
+        display: grid;
+        text-align: end;
+        margin-right: 2rem;
+    }
+    .nav_link {
+        color: $gray;
+        text-transform: capitalize;
+        text-decoration: none;
+        font-size: 2rem;
+        transition: all .2s linear;
+        &:hover {
+            color: $orange;
+        }
+    }
+}

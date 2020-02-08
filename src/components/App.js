@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header/Header';
+import './App.css';
 import Albums from './albums/Albums';
 import TracksList from './tracks/TracksList';
 import Lyrics from './lyrics/Lyrics';

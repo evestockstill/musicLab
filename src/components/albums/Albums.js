@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useAlbums } from '../../hooks/albums';
 import { Link } from 'react-router-dom';
+import styles from './Albums.css';
 import record from '../../assets/record.jpg';
 
 const Albums = ({ match }) => {
@@ -10,10 +11,23 @@ const Albums = ({ match }) => {
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
-      <Link key={album.id} to={`/tracks/${match.params.artistName}/${album.title}/${album.id}`}>
-        <li>
-          <p>{album.title}</p>
-          <img src={album['cover-art-archive']['front'] ? `http://coverartarchive.org/release/${album.id}/front` : record}/>
+      <Link
+        key={album.id}
+        to={`/tracks/${match.params.artistName}/${album.title}/${album.id}`}
+      >
+        <li className={styles.image}>
+          <figcaption>
+            <p>{album.title}</p>
+          </figcaption>
+          <figure>
+            <img
+              src={
+                album['cover-art-archive']['front']
+                  ? `http://coverartarchive.org/release/${album.id}/front`
+                  : record
+              }
+            />
+          </figure>
         </li>
       </Link>
     );

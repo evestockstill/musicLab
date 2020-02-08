@@ -1,0 +1,21 @@
+
+$green: #146d23;
+$black: rgb(21, 20, 20);
+$orange: #e2870f;
+$gray: #c9c1c1;
+$white: #fff;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $white;
+    color: $black;
+  font-family: 'Raleway', sans-serif;
+}
