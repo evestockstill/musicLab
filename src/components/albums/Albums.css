@@ -1,12 +1,83 @@
-.image {
-    height: 250px;
+@import '../App.css';
+
+.album {
+  background: $black;
+  border-radius: 1rem;
+  margin: 1rem 0;
+     text-decoration: none;
+
+  .record_image {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: block;
+     text-decoration: none;
+
+  }
+  
+  
+  img {
+    height: 20rem;
     width: auto;
-}
-img {
-    height: 250px;
-    width: 250px;
+    padding-bottom: .3rem;
+    border-bottom: 4px solid $green;
+    background-color: black;
+
+  }
+  .img_container {
+    position: relative;
+   
+    width: auto;
+    border: 3px solid black;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .album_info {
+    padding: 1.2rem 0.3rem;
     
+    h3 {
+    text-transform: uppercase;
+    color: $green;
+    background-color: $black2;
+    text-decoration: none;
+    text-align: center;
+    }
+  }
 }
-figcaption {
-    padding: 1rem;
+.Link {
+  color: inherit;
+  text-decoration: inherit;
+  h3 {
+    font-size: 1rem;
+    overflow: hidden;
+  }
 }
+.ul {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+@media screen and (min-width: 550px) {
+    .ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+}
+@media screen and (min-width: 752px) {
+    .ul {
+        width: 85vw;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1140px) {
+    .ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (min-width: 1240px) {
+    .ul {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Search.css';
+import styles from './Search.css';
 
 const SearchBar = ({ query, onQueryChange, onSubmit }) => {
   return (
@@ -10,7 +10,7 @@ const SearchBar = ({ query, onQueryChange, onSubmit }) => {
         value={query}
         onChange={({ target }) => onQueryChange(target.value)}
       />
-      <button>Search</button>
+      <button className={styles.button}>Search</button>
     </form>
   );
 };

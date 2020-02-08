@@ -1,11 +1,44 @@
 @import '../App.css';
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
 
-.nav {
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+
+.Header {
     background: $black;
-    padding: 0.8rem 1.2rem;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    
+    padding: 1.8rem 1.2rem;
+   display: flex;
+    text-align: center;
+    color: $green;
+    font-size: 3rem;
+    border-bottom: 1rem solid $green;
+    .title {
+       margin: 0 auto;
+    }
     img {
         height: 7rem;
         width: 7rem;
@@ -29,3 +62,7 @@
         }
     }
 }
+.title {
+       display: inline;
+       text-align: center;
+    }

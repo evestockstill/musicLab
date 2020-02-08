@@ -3,43 +3,43 @@ import PropTypes from 'prop-types';
 import { useAlbums } from '../../hooks/albums';
 import { Link } from 'react-router-dom';
 import styles from './Albums.css';
-import record from '../../assets/record.jpg';
+import record from '../../assets/record2.png';
 
-const Albums = ({ match }) => {
+const Album = ({ match }) => {
   const { albums, count, loading } = useAlbums(match.params.id);
   if(loading) return <p>Loading...</p>;
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
-      <Link
+      
+      <Link className={styles.Link}
         key={album.id}
         to={`/tracks/${match.params.artistName}/${album.title}/${album.id}`}
       >
-        <li className={styles.image}>
-          <figcaption>
-            <p>{album.title}</p>
-          </figcaption>
-          <figure>
+        <article className={styles.album}>
+          <div className={styles.img_container}>
             <img
+              className={styles.record_image}
               src={
                 album['cover-art-archive']['front']
                   ? `http://coverartarchive.org/release/${album.id}/front`
                   : record
               }
+              alt='record cover'
             />
-          </figure>
-        </li>
+          </div>
+          <div className={styles.album_info}>
+            <h3>{album.title}</h3>
+          </div>
+        </article>
       </Link>
     );
   });
 
-  return (
-
-    <ul>{albumsList} </ul>
-  );
+  return <ul className={styles.ul}>{albumsList} </ul>;
 };
 
-Albums.propTypes = {
+Album.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -48,4 +48,4 @@ Albums.propTypes = {
   }).isRequired
 };
 
-export default Albums;
+export default Album;

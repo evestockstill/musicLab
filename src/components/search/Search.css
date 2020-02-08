@@ -1,3 +1,32 @@
-input{
-    width: 30vw;
+@import '../App.css';
+form {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid $black;
+    input[type=text] {
+    background: linear-gradient(to right, $black, $black2, $green2, $black2, $black);
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+    text-shadow: 0 .3rem .4rem $gray;
+    border: 2px solid $black;
+    outline: none;
+    padding: 1rem; 
+    width: 40vw;
+    height: 3.5rem;
+    border-radius: 5px;
 }
+input[type=text]:hover {
+    cursor: pointer;
+}
+}
+.button {
+    padding: 1rem;
+    margin: 1rem;
+    color: $green;
+    background: $black;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+

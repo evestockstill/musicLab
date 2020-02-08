@@ -1,8 +1,11 @@
 
-$green: #146d23;
-$black: rgb(21, 20, 20);
-$orange: #e2870f;
-$gray: #c9c1c1;
+$green: #0bacb2;
+$green2: hsla(182, 88%, 37%, 0.834);
+$black: rgb(5, 4, 4);
+$black2: hsla(0, 9%, 2%, 0.829);
+$orange: #19812f;
+$gray: #686666;
+$lightGray: #d6d3d3;
 $white: #fff;
 
 * {
@@ -15,7 +18,7 @@ html {
 }
 
 body {
-    background: $white;
+    background: $lightGray;
     color: $black;
   font-family: 'Raleway', sans-serif;
 }
