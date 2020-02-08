@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTracks } from '../../hooks/tracks';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 
@@ -24,6 +25,14 @@ const TracksList = ({ match }) => {
     </>
   );
 };
-
+TracksList.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      artistName: PropTypes.string.isRequired,
+      albumId: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired
+    }).isRequired
+  }).isRequired
+};
 
 export default TracksList;
