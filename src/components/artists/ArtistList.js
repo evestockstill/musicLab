@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import Paging from '../pagination/Paging';
 
 
-const ArtistList = ({ artists, loading }) => {
+const ArtistList = ({ artists, loading, handlePageChange }) => {
+
   const artistList = artists.map(artist => {
     return (
       <Link key={artist.id} to={`/artist/${artist.name}/${artist.id}`}>
@@ -13,7 +15,10 @@ const ArtistList = ({ artists, loading }) => {
   });
   if(loading) return <h1>Loading</h1>; 
   return (
-    <ul>{artistList}</ul>
+    <>
+      <Paging handlePageChange={handlePageChange}/>
+      <ul>{artistList}</ul>
+    </>
   );
 };
 
