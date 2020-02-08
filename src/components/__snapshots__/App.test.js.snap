@@ -6,11 +6,15 @@ exports[`App component renders App 1`] = `
     <Switch>
       <Route
         component={[Function]}
-        path="/albums/:id/:albumId"
+        path="/lyrics/:artistName/:albumId/:songId"
       />
       <Route
         component={[Function]}
-        path="/albums/:id"
+        path="/tracks/:artistName/:id/:albumId"
+      />
+      <Route
+        component={[Function]}
+        path="/artist/:artistName/:id"
       />
       <Route
         component={[Function]}
