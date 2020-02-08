@@ -14,7 +14,7 @@ const SearchBar = ({ query, onQueryChange, onSubmit }) => {
   );
 };
 SearchBar.propTypes = {
-  query: PropTypes.string.isRequired,
+  query: PropTypes.string,
   onQueryChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired
 };

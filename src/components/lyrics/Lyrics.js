@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { useLyrics } from '../../hooks/lyrics';
 
 const Lyrics = ({ match }) => {
-  console.log('lyrics', lyrics);
   const { lyrics } = useLyrics(
     match.params.artistName,
     match.params.songId
