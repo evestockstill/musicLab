@@ -7,7 +7,12 @@ import record from '../../assets/record2.png';
 
 const Album = ({ match }) => {
   const { albums, count, loading } = useAlbums(match.params.id);
-  if(loading) return <p>Loading...</p>;
+  if(loading) return (
+    <div className={styles.spinner}>
+      <div className={styles.bounce1}></div>
+      <div className={styles.bounce2}></div>
+    </div>
+  );
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (

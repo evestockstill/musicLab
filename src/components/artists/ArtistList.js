@@ -18,7 +18,7 @@ const ArtistList = ({ artists, loading, handlePageChange }) => {
       </Link>
     );
   });
-  if (loading)
+  if(loading)
     return (
       <div className={styles.spinner}>
         <div className={styles.bounce1}></div>
