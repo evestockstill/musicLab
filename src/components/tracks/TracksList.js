@@ -37,7 +37,7 @@ const TracksList = ({ match }) => {
 TracksList.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      artistName: PropTypes.string.isRequired,
+      artistName: PropTypes.string,
       albumId: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired
     }).isRequired

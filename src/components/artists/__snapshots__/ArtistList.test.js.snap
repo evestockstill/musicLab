@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ArtistList component matches a snapshot 1`] = `
-<h1>
-  Loading
-</h1>
+<div
+  className="spinner"
+>
+  <div
+    className="bounce1"
+  />
+  <div
+    className="bounce2"
+  />
+</div>
 `;

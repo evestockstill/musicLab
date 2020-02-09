@@ -24,6 +24,9 @@
   }
 }
 .TrackNames {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 2.5rem;
     padding: 1rem;
 }
@@ -69,7 +72,9 @@
   }
 }
 .title {
-    font-size: 3rem;
+   
+    font-size: 3.8rem;
+    padding-top: 2rem;
     text-align: center;
     font-family: 'Permanent Marker', cursive;
 }

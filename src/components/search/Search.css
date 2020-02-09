@@ -8,7 +8,7 @@ form {
     input[type=text] {
         display: flex;
     justify-content: center;
-    background: linear-gradient(to right, $black, $green, $green, $green, $green, $green, $black);
+    background: $orange;
     font-size: 2rem;
     margin: 1rem 0;
     text-align: center;
@@ -26,7 +26,7 @@ input[type=text]:hover {
 }
 .button {
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem .1rem;
     color: $green;
     background: $black;
     border-radius: 5px;

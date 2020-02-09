@@ -7,7 +7,7 @@
     text-align: center;
     color: $green;
     font-size: 3rem;
-    border-bottom: 1rem solid $orange;
+    border-bottom: 1rem solid $green;
     .title {
        margin: 0 auto;
     }

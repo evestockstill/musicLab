@@ -5,8 +5,8 @@
     height: 0;
     border-top: 2rem solid transparent;
     border-bottom: 2rem solid transparent;
-    border-left: 2rem solid $orange;
-    background: $lightGray2;
+    border-left: 2rem solid $green;
+    background: $white;
     margin: 1.5rem;
 
     outline: none;
@@ -16,14 +16,14 @@
     height: 0;
     border-top: 2rem solid transparent;
     border-bottom: 2rem solid transparent;
-    border-right: 2rem solid $orange;
-    background: $lightGray2;
+    border-right: 2rem solid $green;
+    background: $white;
     outline: none;
     margin: 1.5rem;
   }
   .Buttons {
       position: relative;
-      left: 45%;
+      text-align: center;
   }
   
 

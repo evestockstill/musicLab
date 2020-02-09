@@ -9,7 +9,9 @@ exports[`SearchBar component matches a snapshot 1`] = `
     type="text"
     value="test query"
   />
-  <button>
+  <button
+    className="button"
+  >
     Search
   </button>
 </form>
