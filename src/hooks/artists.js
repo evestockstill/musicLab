@@ -9,8 +9,6 @@ export const useArtists = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
 
-
-
   const handleQueryChange = searchInput => {
     setQuery(searchInput);
   };

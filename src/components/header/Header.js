@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './Header.css';
 import SearchBar from '../search/Search';
 import ArtistList from '../artists/ArtistList';

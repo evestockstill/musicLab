@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Paging.css'
+import styles from './Paging.css';
 
 const Paging = ({ handlePageChange }) => {
   return (
