@@ -11,8 +11,8 @@ const Album = ({ match }) => {
   if(!count) return <p>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
-      
-      <Link className={styles.Link}
+      <Link
+        className={styles.Link}
         key={album.id}
         to={`/tracks/${match.params.artistName}/${album.title}/${album.id}`}
       >
@@ -33,10 +33,15 @@ const Album = ({ match }) => {
           </div>
         </article>
       </Link>
+     
     );
   });
 
-  return <ul className={styles.ul}>{albumsList} </ul>;
+  return (
+    <ul className={styles.ul}>
+      {albumsList} <h2>Albums by {match.params.artistName}</h2>
+    </ul>
+  );
 };
 
 Album.propTypes = {

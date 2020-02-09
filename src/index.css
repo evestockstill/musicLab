@@ -3,9 +3,10 @@ $green: #0bacb2;
 $green2: hsla(182, 88%, 37%, 0.834);
 $black: rgb(5, 4, 4);
 $black2: hsla(0, 9%, 2%, 0.829);
-$orange: #19812f;
-$gray: #686666;
-$lightGray: #d6d3d3;
+$orange: #ea5b23;
+$gray: #313131;
+$lightGray: #353434;
+$lightGray2: #b0afaf;
 $white: #fff;
 
 * {
@@ -18,7 +19,7 @@ html {
 }
 
 body {
-    background: $lightGray;
+    background: $lightGray2;
     color: $black;
   font-family: 'Raleway', sans-serif;
 }

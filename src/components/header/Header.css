@@ -1,41 +1,13 @@
 @import '../App.css';
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem); }
-  80% {
-    transform: translateX(1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
 
 .Header {
     background: $black;
     padding: 1.8rem 1.2rem;
-   display: flex;
+    display: flex;
     text-align: center;
     color: $green;
     font-size: 3rem;
-    border-bottom: 1rem solid $green;
+    border-bottom: 1rem solid $orange;
     .title {
        margin: 0 auto;
     }
@@ -44,23 +16,7 @@
         width: 7rem;
         border-radius: 100%;
     }
-    .nav_links {
-        align-self: center;
-        list-style-type: none;
-        display: grid;
-        text-align: end;
-        margin-right: 2rem;
-    }
-    .nav_link {
-        color: $gray;
-        text-transform: capitalize;
-        text-decoration: none;
-        font-size: 2rem;
-        transition: all .2s linear;
-        &:hover {
-            color: $orange;
-        }
-    }
+    
 }
 .title {
        display: inline;

@@ -2,14 +2,17 @@
 form {
     display: flex;
     justify-content: center;
+    text-align: center;
     padding: 1rem;
     border: 1px solid $black;
     input[type=text] {
-    background: linear-gradient(to right, $black, $black2, $green2, $black2, $black);
+        display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, $black, $green, $green, $green, $green, $green, $black);
     font-size: 2rem;
     margin: 1rem 0;
     text-align: center;
-    text-shadow: 0 .3rem .4rem $gray;
+    text-shadow: 0 .1rem .2rem $gray;
     border: 2px solid $black;
     outline: none;
     padding: 1rem; 
@@ -27,6 +30,7 @@ input[type=text]:hover {
     color: $green;
     background: $black;
     border-radius: 5px;
+    outline: none;
     font-size: 1rem;
 }
 
