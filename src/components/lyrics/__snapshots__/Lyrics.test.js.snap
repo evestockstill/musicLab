@@ -1,3 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Lyrics component matches a snapshot 1`] = `<p />`;
+exports[`Lyrics component matches a snapshot 1`] = `
+<Fragment>
+  <h2
+    className="SongTitle"
+  >
+    Lyrics for 
+  </h2>
+  <div
+    className="lyricsBox"
+  >
+    <p
+      className="lyrics"
+    />
+  </div>
+</Fragment>
+`;

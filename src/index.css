@@ -1,0 +1,25 @@
+
+$green: #0bacb2;
+$green2: hsla(182, 88%, 37%, 0.459);
+$black: rgb(5, 4, 4);
+$black2: hsla(0, 9%, 2%, 0.829);
+$orange: #ea5b23;
+$gray: #313131;
+$lightGray: #353434;
+$lightGray2: #b0afaf;
+$white: rgb(243, 243, 243);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $white;
+    color: $black;
+  font-family: 'Raleway', sans-serif;
+}

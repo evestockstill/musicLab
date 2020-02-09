@@ -2,17 +2,22 @@
 
 exports[`Header component matches a snapshot 1`] = `
 <Fragment>
-  <h1
+  <header
     className="Header"
   >
-    Artist Search
-  </h1>
+    <h1
+      className="title"
+    >
+      Artist Search
+    </h1>
+  </header>
   <SearchBar
     onQueryChange={[Function]}
     onSubmit={[Function]}
   />
   <ArtistList
     artists={Array []}
+    handlePageChange={[Function]}
     loading={true}
   />
 </Fragment>

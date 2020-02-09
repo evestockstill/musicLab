@@ -9,9 +9,15 @@ const Header = () => {
 
   return (
     <>
-      <h1 className={styles.Header}>Artist Search</h1>
+      <header className={styles.Header}>
+        <h1 className={styles.title}>Artist Search</h1>
+      </header>
       <SearchBar onSubmit={handleSubmit} onQueryChange={handleQueryChange} />
-      <ArtistList artists={artists} loading={loading} handlePageChange={handlePageChange} />
+      <ArtistList
+        artists={artists}
+        loading={loading}
+        handlePageChange={handlePageChange}
+      />
     </>
   );
 };
