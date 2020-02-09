@@ -29,7 +29,7 @@ const TracksList = ({ match }) => {
   });
   return (
     <>
-      <h1 className={styles.title}>Tracks on { match.params.id} album</h1>
+      <h1 className={styles.title}>Tracks on { match.params.id}</h1>
       <ul className={styles.TrackNames}>{listOfTracks}</ul>
     </>
   );

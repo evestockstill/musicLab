@@ -6,7 +6,7 @@
   padding: .6rem;
   height: 25rem;
   width: 100%;
-  margin: 1rem .5;
+  margin: 5rem .5;
      text-decoration: none;
      overflow: hidden;
 
@@ -58,23 +58,24 @@
 
   }
 }
+.AlbumTitle{
+      font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 1rem .2rem 1rem;
+    
+    }
 .ul {
     width: 70vw;
-    margin: 2.4rem auto;
+    margin: 3.4rem auto;
     padding: 1rem 0;
-    h2 {
-      position: absolute;
-      font-family: 'Permanent Marker', cursive;
-      top: 0;
-    font-size: 3rem;
-    margin-bottom: 3rem; 
-    }
+    
 }
 @media screen and (min-width: 550px) {
     .ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 2rem;
+        grid-gap: 2.5rem;
     }
 }
 @media screen and (min-width: 752px) {
@@ -133,5 +134,12 @@
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
+}
+.error {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  padding: 3rem;
+  margin-top: 4rem;
 }
 

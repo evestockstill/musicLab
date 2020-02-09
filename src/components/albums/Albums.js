@@ -13,7 +13,7 @@ const Album = ({ match }) => {
       <div className={styles.bounce2}></div>
     </div>
   );
-  if(!count) return <p>This artist has no albums.</p>;
+  if(!count) return <p className={styles.error}>This artist has no albums.</p>;
   const albumsList = albums.map(album => {
     return (
       <Link
@@ -38,14 +38,16 @@ const Album = ({ match }) => {
           </div>
         </article>
       </Link>
-     
     );
   });
 
   return (
-    <ul className={styles.ul}>
-      {albumsList} <h2>Albums by {match.params.artistName}</h2>
-    </ul>
+    <>
+      <h2 className={styles.AlbumTitle}>Albums by {match.params.artistName}</h2>
+      <ul className={styles.ul}>
+        {albumsList} 
+      </ul>
+    </>
   );
 };
 
