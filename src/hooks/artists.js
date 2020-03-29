@@ -18,19 +18,17 @@ export const useArtists = () => {
     return artists;
   };
 
-  const handlePageChange = (value) => {
-    
-    if(value === 'next'){
+  const handlePageChange = value => {
+    if (value === 'next') {
       setPage(page + 1);
     }
-    if(value === 'previous' && page !== 1){
+    if (value === 'previous' && page !== 1) {
       setPage(page - 1);
     }
   };
 
-
   useEffect(() => {
-    if(!query) {
+    if (!query) {
       setLoading(false);
       return;
     }
@@ -42,5 +40,12 @@ export const useArtists = () => {
       })
       .finally(() => setLoading(false));
   }, [searchTerm, page]);
-  return { loading, artists, count, handleQueryChange, handleSubmit, handlePageChange };
+  return {
+    loading,
+    artists,
+    count,
+    handleQueryChange,
+    handleSubmit,
+    handlePageChange
+  };
 };

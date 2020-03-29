@@ -20,9 +20,20 @@
     outline: none;
     margin: 1.5rem;
   }
+  .previousText {
+    margin-right: 1rem;
+     font-size: 2rem;
+    color: red;
+  }
+  .nextText {
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: red;
+  }
   .Buttons {
-      position: relative;
-      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
   }
   
 
